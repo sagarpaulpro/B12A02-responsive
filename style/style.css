@@ -119,3 +119,42 @@ span {
 .banner div h1 {
     font-family: "Noto Serif", serif;
 }
+
+
+section {
+    margin: 0 10%;
+}
+.product-title {
+    text-align: center;
+}
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.card {
+    border-radius: 5px;
+    box-shadow: 5px 2px 1px 1px 1 black;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card button {
+    width: 100%;
+    background-color: #E95A08;
+    border: none;
+    border-radius: 5px;
+    padding: 26px 50px;
+    
+}
+.card button:hover {
+    transform: scale(1.04);
+    background-color: #f57434;
+
+}

@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    margin: 0 10%;
+}
+span {
+    color: #E95A08;
+}
+section {
+    margin: 0 10%;
+}
 .noto-serif-spanfont {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -52,13 +65,66 @@ header nav {
     margin-bottom: 0px;
 }
 
-header {
-    margin: 0 10%;
+
+.banner {
+    display: flex;
+    align-items: end;
+    margin: 120px auto;
 }
-span {
-    color: #E95A08;
+.banner img {
+    position: right bottom;
+    width: 570px;
+    height: 355px;
+    margin: 0px;
+    padding: 0px;
+}
+.banner div {
+    margin: 0px;
+    padding: 0px;
+}
+.banner div h1 {
+    font-family: "Noto Serif", serif;
 }
 
+.product-title {
+    text-align: center;
+}
+.product-title p {
+    padding: 0% 20%;
+}
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 3%;
+}
+.card {
+    border-radius: 5px;
+    box-shadow: 5px 2px 1px 1px 1 black;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card button {
+    width: 100%;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8%;
+    font-weight: bold;
+}
+.card button:hover {
+    transform: scale(1.04);
+    background-color: #f57434;
+
+}
 
 @media (max-width: 576px) {
     header {
@@ -81,13 +147,28 @@ span {
     .banner {
         flex-direction: column-reverse;
         margin: 0px;
-    padding: 0px;
+    }
+    .banner div {
+        padding-left: 16px;
     }
     .banner img {
         width: 393px;
         height: 245px;
         margin: 0px;
-    padding: 0px;
+        padding: 0px;
+    }
+    .product-title p {
+    padding: 0px 28px;
+    }
+    .product-items {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .card button {
+    padding: 15px 2px;
     }
 }
 
@@ -98,63 +179,13 @@ span {
     header {
         margin: 0px;
     }
+    .product-items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 28px auto;
+    }
+    .product-title p {
+    padding: 0px 28px;
+    }
 }
 
-.banner {
-    display: flex;
-    align-items: end;
-    margin: 120px auto;
-}
-.banner img {
-    position: right bottom;
-    width: 570px;
-    height: 355px;
-    margin: 0px;
-    padding: 0px;
-}
-.banner div {
-    margin: 0px;
-    padding: 0px;
-}
-.banner div h1 {
-    font-family: "Noto Serif", serif;
-}
-
-
-section {
-    margin: 0 10%;
-}
-.product-title {
-    text-align: center;
-}
-.product-items {
-    display: grid;
-    grid-template-columns: repeat(4,2fr);
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.card {
-    border-radius: 5px;
-    box-shadow: 5px 2px 1px 1px 1 black;
-}
-.card:hover {
-    transform: scale(1.05);
-}
-.card img{
-    width: 100%;
-    border-radius: 5px;
-}
-.card button {
-    width: 100%;
-    background-color: #E95A08;
-    border: none;
-    border-radius: 5px;
-    padding: 26px 50px;
-    
-}
-.card button:hover {
-    transform: scale(1.04);
-    background-color: #f57434;
-
-}

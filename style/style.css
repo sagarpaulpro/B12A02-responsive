@@ -126,6 +126,34 @@ header nav {
 
 }
 
+.plant-lover {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-top: 220px;
+    margin-bottom: 133px;
+}
+.lover-action {
+    position: relative;
+}
+.flower-store {
+    width: 540px;
+}
+.badge {
+    position: absolute;
+    top: -150px;
+    left: 70%;
+    width: 286px;
+    height: 286px;
+}
+.badge:hover {
+    transform: scale(1.06);
+}
+.lover-description {
+    padding: 38px 0 38px 60px;
+    font-size: 1.5em;
+}
+
 @media (max-width: 576px) {
     header {
         margin: 0px;
@@ -170,6 +198,20 @@ header nav {
     .card button {
     padding: 15px 2px;
     }
+    .plant-lover {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 133px;
+    }
+    .flower-store {
+    margin: 10px;
+    }
+    .lover-description {
+    padding: 3px 0 3px 6px;
+    font-size: 1em;
+}
 }
 
 @media (min-width: 576px) and (max-width:768px){
@@ -187,5 +229,146 @@ header nav {
     .product-title p {
     padding: 0px 28px;
     }
+    .plant-lover {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    margin-bottom: 133px;
+    }
 }
 
+
+/* 
+.glossary {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.left-flower {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    vertical-align: center;
+}
+.text {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.text a {
+    font-size: 16px;
+}
+.text2 {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.text p {
+  font-size: 40px;
+  font-weight: bold;
+}
+a {
+  margin-top: 5px;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+} */
+/* 
+.glossary {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #e9f0f9;
+  font-family: sans-serif;
+}
+
+/* Left Side: Two vertical stacked banners */
+.left-flower {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each small banner */
+.bloom,
+.ana {
+  /* width: 250px;
+  height: 150px; */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  position: relative;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: ;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  background-size: 100%;
+}
+
+.text a {
+  display: inline-block;
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Right big banner */
+.right-flower {
+  flex: 1;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text2 {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.text2 p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .text2 a {
+  display: inline-block;
+  margin-top: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+} */ */

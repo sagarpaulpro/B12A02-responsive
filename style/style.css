@@ -153,6 +153,93 @@ header nav {
     padding: 38px 0 38px 60px;
     font-size: 1.5em;
 }
+.glossary-title h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Noto Serif", serif;
+}
+.glossary-title p {
+    font-size: 22px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*  Glossary Section */
+.glossary {
+    display: flex;
+    gap: 28px;
+    border: none;
+    border-radius: 14px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+}
+.left-flower {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 367px;
+    height: 423px;
+    
+}
+.right-flower {
+    width: 753px;
+    height: 423px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+}
+.bloom {
+    width: 367px;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+}
+.ana {
+    width: 367px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 14px;
+}
+.text {
+    text-align: center;
+}
+.text  p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+}
+.text a {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300px;
+    font-size: 16px;
+}
+.text2 {
+    text-align: center;
+}
+.text2 p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+
+}
+.text2 a {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300px;
+    font-size: 28px;
+}
 
 .footer-title {
     text-align: center;
@@ -284,9 +371,30 @@ header nav {
     .footer-title {
     text-align: center;
     padding: 110px 36px 64px 36px;
+    }
+    .glossary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+    .right-flower {
+    width: 367px;
+    height: 423px;
+    }
+    .text2  p {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Noto Serif", serif;
+    }
+    .text2 a {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 300px;
+        font-size: 16px;
+    }
 }
-}
-
 @media (min-width: 576px) and (max-width:768px){
     header nav {
         margin: 0px;
@@ -319,136 +427,3 @@ header nav {
         flex-direction: column;
     }
 }
-
-
-/* 
-.glossary {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 100px;
-}
-.left-flower {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.right-flower {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    vertical-align: center;
-}
-.text {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 15px;
-  border-radius: 10px;
-  color: white;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.text a {
-    font-size: 16px;
-}
-.text2 {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 15px;
-  border-radius: 10px;
-  color: white;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.text p {
-  font-size: 40px;
-  font-weight: bold;
-}
-a {
-  margin-top: 5px;
-  padding: 6px 12px;
-  border: none;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 28px;
-  font-weight: bold;
-} */
-/* 
-.glossary {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  background-color: #e9f0f9;
-  font-family: sans-serif;
-}
-/* 
-
-.left-flower {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* 
-.bloom,
-.ana {
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
-  display: flex;
-  align-items: flex-end;
-  padding: 15px;
-  position: relative;
-}
-
-.text {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: ;
-  border-radius: 8px;
-  color: white;
-  font-size: 14px;
-  background-size: 100%;
-}
-
-.text a {
-  display: inline-block;
-  margin-top: 5px;
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.right-flower {
-  flex: 1;
-  height: 320px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.text2 {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px 30px;
-  border-radius: 12px;
-  color: white;
-  text-align: center;
-}
-
-.text2 p {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.text2 a {
-  display: inline-block;
-  margin-top: 8px;
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-} 
-*/

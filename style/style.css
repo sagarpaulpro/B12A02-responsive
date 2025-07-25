@@ -153,7 +153,26 @@ header nav {
     padding: 38px 0 38px 60px;
     font-size: 1.5em;
 }
-
+.subscriber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    color: aliceblue;
+    background-color: #E95A08;
+    border: none;
+    padding: 2% 8%;
+    margin: 0;
+}
+.input-email {
+    padding: 2% 70%;
+    border: none;
+    outline: none;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
 @media (max-width: 576px) {
     header {
         margin: 0px;
@@ -301,7 +320,7 @@ a {
   background-color: #e9f0f9;
   font-family: sans-serif;
 }
-
+/* 
 /* Left Side: Two vertical stacked banners */
 .left-flower {
   display: flex;
@@ -365,10 +384,10 @@ a {
   font-weight: bold;
 }
 
-/* .text2 a {
+.text2 a {
   display: inline-block;
   margin-top: 8px;
   color: white;
   font-weight: bold;
   text-decoration: underline;
-} */ */
+} */
